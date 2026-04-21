@@ -1,0 +1,35 @@
+my_dict = {
+    "brand" : "Ford",
+    "model" : "Mustang",
+    "year" : 1964
+}
+
+print(my_dict)
+
+model_year = my_dict["year"]
+print(model_year)
+
+my_dict["color"] = "red"
+print(my_dict)
+
+my_dict["year"] = "2020"
+print(my_dict)
+
+del my_dict["color"]
+print(my_dict)
+
+model_year = my_dict.get("year")
+print(model_year)
+
+my_dict.update({"color": "red"})
+print(my_dict)
+
+my_dict.update({"year": 2025})
+print(my_dict)
+
+rem_value = my_dict.pop("brand")
+print(rem_value)
+print(my_dict)
+
+my_dict.clear()
+print(my_dict)

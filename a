@@ -1,0 +1,22 @@
+while True:
+    my_password = input("Enter a password with at least two words separated by spaces: ")
+
+    # Check if password is at least 10 characters long
+    if len(my_password) < 10:
+        print("Your password is shorter than 10 characters.")
+    
+    # Check if password starts with a number
+    elif my_password[0].isdigit():
+        print("Your password starts with a number.")
+    
+    # Check if password starts with a capital letter
+    elif my_password[0].islower():
+        print("Your password does not start with a capital letter.")
+    
+    # Check if password contains at least two words
+    elif len(my_password.split()) < 2:
+        print("Your password does not contain at least two words.")
+    
+    else:
+        print("Password accepted!")
+        break
